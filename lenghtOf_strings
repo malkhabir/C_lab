@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+
+int numberofCaractere(const char* name);
+
+
+int main(int argc, char *argv[])
+{
+  char name[]="Hello";
+
+  int lenght=0;
+
+
+  lenght=numberofCaractere(name);
+
+  printf("%s has %d caracteres ",name,lenght);
+
+
+
+
+    return 0;
+}
+
+
+int numberofCaractere(const char* name)
+{
+    char caractereActuel=0;
+    int numberofCarac=0;
+
+
+
+    do { caractereActuel=name[numberofCarac];
+
+        numberofCarac++;
+
+    }while(caractereActuel != '\0');
+
+
+    numberofCarac--;
+    return numberofCarac;
+
+}
