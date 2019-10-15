@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/pendu.dir/main.c.o  -o pendu 
